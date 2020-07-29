@@ -8,12 +8,16 @@ Image is uploaded via S3, processed using Amazons image recognition tools to obt
 letting them know their car was caught running a red light.
 
 
--
+
 
 
 Future changes : 
+
   RDS/DynamoDB to store info about an individuals traffic infractions plus a reference to the image
+
   Export data from S3 to create a document incident log for each camera shot that includes the image, time, location etc used for court/ticket contesting.
  
-Alternative : Lambda program that triggers on S3 upload. Realistically all a traffic camera would do is snap an image then push it to S3, using AWS Lambda would be
+Alternative : 
+
+  Lambda program that triggers on S3 upload. Realistically all a traffic camera would do is snap an image then push it to S3, using AWS Lambda would be
   slightly more realistic though current program is fine for demo purposes.
